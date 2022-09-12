@@ -2,11 +2,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
             "name": "Upload code to board",
             "type": "f5anything",
             "request": "launch",
             "command": "Copy-Item -Path \"${file}\" -Destination \"D:\\code.py\";Copy-Item -Path \"${workspaceFolder}\\lib\\*\" -Exclude .* -Destination \"D:\\lib\\\" -Recurse -Force",
-            "showTerminal": false,
+            "showTerminal": true,
             "terminalName": "Code Uploader"
         }
     ]
