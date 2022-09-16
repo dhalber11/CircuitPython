@@ -14,7 +14,7 @@
             "type": "f5anything",
             "request": "launch",
             "command": "Copy-Item -Path \"${file}\" -Destination \"D:\\code.py\";Copy-Item -Path \"${workspaceFolder}\\lib\\*\" -Exclude .* -Destination \"D:\\lib\\\" -Recurse -Force",
-            "showTerminal": true,
+            "showTerminal": false,
             "terminalName": "Code Uploader"
         }
     ]
