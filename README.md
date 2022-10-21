@@ -116,7 +116,7 @@ This assignment introduced us to a few more libraries and allowed us to learn an
 ## CircuitPython_Distance Sensor
 
 ### Description & Code
-
+For this assignment we were tasked with using the values from a distance sensor and fading the colors in and out. 
 ```python
 import time
 import board
@@ -171,17 +171,71 @@ This was a relatively basic assignment that simply told us to print the values o
 
 
 
-## NextAssignment
+## CircuitPython_LCD
 
 ### Description & Code
-
+For this assignment we had to use a LCD display to show the amount of times a button was pressed and whether or not a switch is on or off. 
 ```python
-Code goes here
+import board
+import time
+import digitalio
+from lcd.lcd import LCD
+
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+from digitalio import DigitalInOut, Direction, Pull 
+
+btn= DigitalInOut(board.D8)
+btn.direction = Direction.INPUT
+btn.pull = Pull.DOWN
+
+switch = DigitalInOut(board.D9)
+switch.direction = Direction.INPUT
+switch.pull = Pull.UP
+
+# get and i2c object
+i2c = board.I2C()
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+
+value = 0
+SwitchState = switch.value
+
+lcd.print("Button:")   #prints what is in the quotes to the lcd 
+lcd.set_cursor_pos(0,8)
+
+prev_state = btn.value
+
+while True:
+    cur_state = btn.value
+
+    if cur_state != prev_state:  
+        if not cur_state:
+            value+=1
+            lcd.set_cursor_pos(0,8)
+            lcd.print(str(value))
+    if switch.value == True:
+      lcd.set_cursor_pos(1,0)
+      lcd.print("True")
+    else:
+      
+      lcd.set_cursor_pos(1,0)
+      lcd.print("False")
+
+    prev_state = cur_state
+  
 
 ```
 
 ### Evidence
 
-### Wiring
+https://user-images.githubusercontent.com/113122357/197231832-460e8970-b184-42ca-ac3e-2e6dc0a6dfe3.mp4
+
+Credits to Jinho Park for the video find his repository here: https://github.com/Jpark27614/CircuitPython
+
+### Wiring!
+[unnamed](https://user-images.githubusercontent.com/113122357/197233714-8c205f59-5b4f-4fbc-b296-d2d00e058221.png)
+
 
 ### Reflection
+This assignment was a bit challenging as there was some new parts that I had not used before. The Slideswitch was a bit hard to figure out but with the right libraries it is not difficult. I had a bit of difficulty finding the LCD libraries but other than that this was just a good refresher to the world of LCD. 
