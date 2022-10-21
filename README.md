@@ -113,24 +113,61 @@ https://user-images.githubusercontent.com/113122357/193072533-0f375f94-46a8-4b5a
 This assignment introduced us to a few more libraries and allowed us to learn and recap on wiring different components. It was a bit difficult and taught us to use code from online and tweak it for our own use. The spicy part was difficult to figure out but I was able to finish it with some help from friends. 
 
 
-## CircuitPython_LCD
+## CircuitPython_Distance Sensor
 
 ### Description & Code
 
 ```python
-Code goes here
+import time
+import board
+import adafruit_hcsr04
+import neopixel
+import simpleio 
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+dot.brightness = .1
+
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D8, echo_pin=board.D9)
+
+while True:
+    try:
+        cm=int(sonar.distance)
+        print((cm,))
+    except RuntimeError:
+        print("Retrying!")
+    time.sleep(0.1)
+    if cm<5 :
+      dot.fill((255, 0, 0))
+    elif cm >= 5 and cm < 20 : 
+        x = simpleio.map_range(cm, 5, 20, 0, 255)
+        blue = x 
+        red = 255-x 
+        green = 0
+        dot.fill((red, green, blue))
+    elif cm >= 20 and cm<35 : 
+        y = simpleio.map_range(cm, 20, 35, 255, 0)
+        red = 0 
+        green = 255- y
+        blue = y
+        dot.fill((red, green, blue)) 
+    elif cm >35 :
+        dot.fill((0, 255, 0))
+
 
 ```
 
 ### Evidence
 
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+https://user-images.githubusercontent.com/113122357/197228814-64b68543-8df9-49a2-94a3-cd4bae5fec09.mp4
+
+
 
 ### Wiring
+![Incredible Luulia-Lappi](https://user-images.githubusercontent.com/113122357/197229576-1ee94bfb-3387-4934-84f3-4033f21a40d9.png)
 
 ### Reflection
-
-
+This was a relatively basic assignment that simply told us to print the values of the HC-SRO4. However the more difficult part came with smoothly shifting the color of the Neopixel based off of those values. That right there is the key to this assignment, we had to use a map_range function to take the values given and shift the colors between them. This was a helpful and challenging assignment that taught me about this new function that I had never used before. 
 
 
 
