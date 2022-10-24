@@ -239,3 +239,14 @@ Credits to Jinho Park for the video find his repository here: https://github.com
 
 ### Reflection
 This assignment was a bit challenging as there was some new parts that I had not used before. The Slideswitch was a bit hard to figure out but with the right libraries it is not difficult. I had a bit of difficulty finding the LCD libraries but other than that this was just a good refresher to the world of LCD. 
+
+##Swing Arm
+
+###Description
+For this assignment we were given an Onshape document with plans for a "Swing Arm". We were tasked with recreating this part using the given dimensions and answering a few questions that changed certain values within the part. 
+###Evidence
+Link to the Onshape document here: https://cvilleschools.onshape.com/documents/d05abfa364cd39b7a04ebfbd/w/d394d172d7c5c0d077bd6404/e/bc3a927ab2978dd4235e89ba?renderMode=0&uiState=6356a95bf85808678d2296f2
+![image](https://user-images.githubusercontent.com/113122357/197559885-68d5dc36-702f-463f-955d-60c9db28335f.png)
+
+###Reflection
+This assignment was a bit of a more difficult one for me. Overall there was a trick to it that involved using constraints on all of the lines before you used dimensioning. This allowed a lot more ease when dimensioning and saved you from dimensioning multiple things. I had a few issues with the constraints when they overlapped but that was fixed through the simplest way possible, guess and check. This was a helpful assignemnt and we have had one more in the past that was similar to this.
