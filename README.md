@@ -282,7 +282,7 @@ Overall I did have some difficulty with this assignment mainly during the transi
 ## CircuitPython_MotorControl
 
 ### Description 
-
+For this assignment we needed to use a potentiometer to control a motor. The motor was wired through a transistor and diode
 ### Code
 ```python 
 import time
@@ -303,6 +303,8 @@ while True:
 ```
 
 ### Wiring 
+![image](https://user-images.githubusercontent.com/113122357/199763599-3e56c349-a8c1-442a-b987-27956010ca2e.png)
 
 ### Reflection 
+This assignment was difficult, that is for certain. I had many small issues with wiring that were breaking my entire circuit. The code for this assignment was extremely straightforward and quite simple. However the wiring had to be perfect or the "magic smoke" would come out of it all. Since we were working with a large amount of voltage there was a chance of the arduino being completely fried when we powered it up. There was a bunch of small issues that I needed some help to get around including some with my battery pack and the ground wires for them. As well as the transistor and diode. Overall it was very difficult with the wiring but easy with the code.  
 
