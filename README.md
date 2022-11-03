@@ -278,3 +278,31 @@ Link to Onshape document here: https://cvilleschools.onshape.com/documents/17596
 
 ### Reflection
 Overall I did have some difficulty with this assignment mainly during the transition between questions. As I was changing dimensions something would get thrown off and I would be stuck trying to find out what that was. My main issue was constraints and what in the Part that I based new sketches off of. Everything is based off of another thing so if one changed then the other might come with it. In the end I got some help from Mr.H and he was a great help in finding what was off with my designs. This assignment was very useful as it was good practice for the Onshape Certification. 
+
+## CircuitPython_MotorControl
+
+### Description 
+
+### Code
+```python 
+import time
+import board
+from analogio import AnalogIn,AnalogOut
+from digitalio import DigitalInOut, Direction, Pull
+import simpleio
+from adafruit_motor import motor 
+
+motorpin = AnalogOut(board.A1)
+potentiometer = AnalogIn(board.A0)  # potentiometer connected to A1, power & ground
+
+while True:
+
+    print((int(simpleio.map_range(potentiometer.value,0,65535,0,255)),))     
+    time.sleep(0.25) 
+    motorpin.value = potentiometer.value
+```
+
+### Wiring 
+
+### Reflection 
+
