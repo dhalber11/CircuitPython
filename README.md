@@ -240,6 +240,37 @@ Credits to Jinho Park for the video find his repository here: https://github.com
 ### Reflection
 This assignment was a bit challenging as there was some new parts that I had not used before. The Slideswitch was a bit hard to figure out but with the right libraries it is not difficult. I had a bit of difficulty finding the LCD libraries but other than that this was just a good refresher to the world of LCD. 
 
+## CircuitPython_MotorControl
+
+### Description 
+For this assignment we needed to use a potentiometer to control a motor. The motor was wired through a transistor and diode
+### Code
+```python 
+import time
+import board
+from analogio import AnalogIn,AnalogOut
+from digitalio import DigitalInOut, Direction, Pull
+import simpleio
+from adafruit_motor import motor 
+
+motorpin = AnalogOut(board.A1)
+potentiometer = AnalogIn(board.A0)  # potentiometer connected to A1, power & ground
+
+while True:
+
+    print((int(simpleio.map_range(potentiometer.value,0,65535,0,255)),))     
+    time.sleep(0.25) 
+    motorpin.value = potentiometer.value
+```
+
+### Wiring 
+![image](https://user-images.githubusercontent.com/113122357/199763599-3e56c349-a8c1-442a-b987-27956010ca2e.png)
+
+### Reflection 
+This assignment was difficult, that is for certain. I had many small issues with wiring that were breaking my entire circuit. The code for this assignment was extremely straightforward and quite simple. However the wiring had to be perfect or the "magic smoke" would come out of it all. Since we were working with a large amount of voltage there was a chance of the arduino being completely fried when we powered it up. There was a bunch of small issues that I needed some help to get around including some with my battery pack and the ground wires for them. As well as the transistor and diode. Overall it was very difficult with the wiring but easy with the code.  
+
+# CAD 
+
 ## Swing Arm
 
 ### Description
