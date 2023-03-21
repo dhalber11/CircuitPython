@@ -339,11 +339,12 @@ while True:
 ### Reflection 
 This assignment was difficult, that is for certain. I had many small issues with wiring that were breaking my entire circuit. The code for this assignment was extremely straightforward and quite simple. However the wiring had to be perfect or the "magic smoke" would come out of it all. Since we were working with a large amount of voltage there was a chance of the arduino being completely fried when we powered it up. There was a bunch of small issues that I needed some help to get around including some with my battery pack and the ground wires for them. As well as the transistor and diode. Overall it was very difficult with the wiring but easy with the code.  
 
-##CircuitPython Encoder 
+## CircuitPython Encoder 
 
-###Description
+### Description
 For this assignment we were told to get a working traffic light using a rotary encoder and an lcd to display the selection. You can scroll to a setting on the lcd then select it by clicking on the encoder. 
-###Code
+
+### Code
 ```python
 import rotaryio
 import time
@@ -398,10 +399,11 @@ while True:
     time.sleep(.05)
     lcd.clear()
     print(f"{retEnc(enc.position)} {enc.position} {encBtn.value}")
-    ```
-###Wiring 
+```
+### Wiring 
 ![Screenshot 2023-03-21 115021](https://user-images.githubusercontent.com/113122357/226664630-8d13238f-8fc5-40b8-9cc1-1b78a225223c.png)
-###Reflection
+
+### Reflection
 I have to give credit to Paul for the code for this assignment. The wiring was straightforward as it has all been done before with the lcd. For the encoder some quick research was all I needed to figure it out. Overall an interesting assignment to learn about the rotary encoder. 
 
-##CircuitPython 
+## CircuitPython 
