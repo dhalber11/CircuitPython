@@ -464,5 +464,6 @@ while True:
 ```
 
 ### Wiring 
-
+This wiring is very similar to the previous assignment. Simply replace the rotary encoder with a temperature sensor. The LCD remains the same. 
 ### Reflection
+This assignment was very cool to play with another new tool to be able to measure air temperature. I was also able to get a refresher on the LCD coding that was helpful. It was a pretty straightforward assignment once the code for the temperature sensor was figured out. Libraries help SO much. 
