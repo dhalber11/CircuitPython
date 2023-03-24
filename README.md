@@ -6,6 +6,8 @@ This repository will actually serve as a aid to help you get started with your o
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [CircuitPython_MotorControl](#CircuitPython_MotorControl)
+* [CircuitPython_Encoder](#CircuitPython_Encoder)
+* [CircuitPython_TempSensor](#CircuitPython_TempSensor)
 ---
 
 ## Hello_CircuitPython
@@ -269,36 +271,7 @@ while True:
 ### Reflection 
 This assignment was difficult, that is for certain. I had many small issues with wiring that were breaking my entire circuit. The code for this assignment was extremely straightforward and quite simple. However the wiring had to be perfect or the "magic smoke" would come out of it all. Since we were working with a large amount of voltage there was a chance of the arduino being completely fried when we powered it up. There was a bunch of small issues that I needed some help to get around including some with my battery pack and the ground wires for them. As well as the transistor and diode. Overall it was very difficult with the wiring but easy with the code.  
 
-## CircuitPython_MotorControl
-
-### Description 
-For this assignment we needed to use a potentiometer to control a motor. The motor was wired through a transistor and diode
-### Code
-```python 
-import time
-import board
-from analogio import AnalogIn,AnalogOut
-from digitalio import DigitalInOut, Direction, Pull
-import simpleio
-from adafruit_motor import motor 
-
-motorpin = AnalogOut(board.A1)
-potentiometer = AnalogIn(board.A0)  # potentiometer connected to A1, power & ground
-
-while True:
-
-    print((int(simpleio.map_range(potentiometer.value,0,65535,0,255)),))     
-    time.sleep(0.25) 
-    motorpin.value = potentiometer.value
-```
-
-### Wiring 
-![image](https://user-images.githubusercontent.com/113122357/199763599-3e56c349-a8c1-442a-b987-27956010ca2e.png)
-
-### Reflection 
-This assignment was difficult, that is for certain. I had many small issues with wiring that were breaking my entire circuit. The code for this assignment was extremely straightforward and quite simple. However the wiring had to be perfect or the "magic smoke" would come out of it all. Since we were working with a large amount of voltage there was a chance of the arduino being completely fried when we powered it up. There was a bunch of small issues that I needed some help to get around including some with my battery pack and the ground wires for them. As well as the transistor and diode. Overall it was very difficult with the wiring but easy with the code.  
-
-## CircuitPython Encoder 
+## CircuitPython_Encoder 
 
 ### Description
 For this assignment we were told to get a working traffic light using a rotary encoder and an lcd to display the selection. You can scroll to a setting on the lcd then select it by clicking on the encoder. 
@@ -365,7 +338,7 @@ while True:
 ### Reflection
 I have to give credit to Paul for the code for this assignment. The wiring was straightforward as it has all been done before with the lcd. For the encoder some quick research was all I needed to figure it out. Overall an interesting assignment to learn about the rotary encoder. 
 
-## CircuitPython Temp Sensor
+## CircuitPython_TempSensor
 
 ### Description
 For this assignment we were told to get the temperature of the environment and print that value to an lcd. Along with this we needed to print a message that says "too hot", "too cold", or "just right", depending on the temperature. 
