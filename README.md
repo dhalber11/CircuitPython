@@ -5,7 +5,7 @@ This repository will actually serve as a aid to help you get started with your o
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_LCD](#CircuitPython_LCD)
-* [Swing_Arm](#SwingArm)
+* [CircuitPython_MotorControl](#CircuitPython_MotorControl)
 ---
 
 ## Hello_CircuitPython
