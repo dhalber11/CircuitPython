@@ -394,6 +394,8 @@ while True:
    # lcd.set_cursor_pos(1,0)
    # lcd.print( "{}F" .format(temp_F)) 
 ```
+### Evidence
+
 
 ### Wiring 
 This wiring is very similar to the previous assignment. Simply replace the rotary encoder with a temperature sensor. The LCD remains the same. 
