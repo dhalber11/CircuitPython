@@ -332,7 +332,12 @@ while True:
     lcd.clear()
     print(f"{retEnc(enc.position)} {enc.position} {encBtn.value}")
 ```
-### Wiring 
+### Evidence
+https://user-images.githubusercontent.com/113122357/227563086-4c8e15c0-40e5-4888-81a4-125e8b642548.mp4
+
+### Wiring
+
+
 ![Screenshot 2023-03-21 115021](https://user-images.githubusercontent.com/113122357/226664630-8d13238f-8fc5-40b8-9cc1-1b78a225223c.png)
 
 ### Reflection
@@ -395,6 +400,9 @@ while True:
    # lcd.print( "{}F" .format(temp_F)) 
 ```
 ### Evidence
+
+
+https://user-images.githubusercontent.com/113122357/227563031-5fb60dcf-8245-4b2e-b336-7f90a5935125.mp4
 
 
 ### Wiring 
