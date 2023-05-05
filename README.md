@@ -410,7 +410,40 @@ This wiring is very similar to the previous assignment. Simply replace the rotar
 ### Reflection
 This assignment was very cool to play with another new tool to be able to measure air temperature. I was also able to get a refresher on the LCD coding that was helpful. It was a pretty straightforward assignment once the code for the temperature sensor was figured out. Libraries help SO much. 
 
+## Photointerrupter
+### Description 
+For this assignment we are soposed to use monotomic time and sleep and the task is to print out when we get interuppted.
+### Code 
+```python
+import time
+import digitalio
+import board
 
+photoI = digitalio.DigitalInOut(board.D7)
+photoI.direction = digitalio.Direction.INPUT
+photoI.pull = digitalio.Pull.UP
+
+last_photoI = True
+last_update = -4
+
+photoICrosses = 0
+
+while True:
+    if time.monotonic()-last_update > 4:
+        print(f"The number of crosses is {photoICrosses}")
+        last_update = time.monotonic()
+    
+    if last_photoI != photoI.value and not photoI.value:
+        photoICrosses += 1
+    last_photoI = photoI.value
+```
+### Evidence
+![228711571-9069fe6d-12e7-4f94-989c-8a6d32102e1e](https://user-images.githubusercontent.com/113122357/236502812-fea8640e-e9c3-4380-be20-b3d2499815bb.png)
+![228884183-8e19d09a-aec4-444f-8eee-c57cb055fed5](https://user-images.githubusercontent.com/113122357/236502863-f74d0bee-3182-41d0-8f02-0a2beb7d0b54.jpg)
+### Reflection 
+This assignment was annoying not because it is hard but because the photointeruppters dont work 90% of the time. The code was simple to understand as it was just a debounce and interrupt counter and the assignment was only difficult to the extent of figuring out why photointeruppters dont work how they should. After that it is very easy.
+
+Credit to [Paul Weder](https://github.com/Pweder69/Q3-Docs-indiviudal) For the code and evidence. 
 # CAD 
 
 ## Onshape Assemblies
