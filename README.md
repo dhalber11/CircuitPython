@@ -455,6 +455,7 @@ Overall I did have some difficulty with this assignment mainly during the transi
 ## Onshape Certification
 
 ### Prep
-For this assignment it was a culmination of the whole of my Onshape expertise come down to one test. I felt very prepared for this exam. I was able to use my knowledge of the past assignments that we used to prepare to help me. It all looked very familiar because of this. All of the parts of the exam were pretty much identical in the general design while the questions and dimensions were different. However because I had practiced the very similar assignments earlier in the year I was practiced with the tools that were needed to design the parts. I ended up passing all thanks to Mr.H and the practice assignments he assigned. There is a link to my certificate [dylan-halbert-ff3a69da-d7b4-4372-af34-5b19af5cd6e2-certificate.pdf](here)
+For this assignment it was a culmination of the whole of my Onshape expertise come down to one test. I felt very prepared for this exam. I was able to use my knowledge of the past assignments that we used to prepare to help me. It all looked very familiar because of this. All of the parts of the exam were pretty much identical in the general design while the questions and dimensions were different. However because I had practiced the very similar assignments earlier in the year I was practiced with the tools that were needed to design the parts. I ended up passing all thanks to Mr.H and the practice assignments he assigned. There is a link to my certificate here: [dylan-halbert-ff3a69da-d7b4-4372-af34-5b19af5cd6e2-certificate.pdf](https://github.com/dhalber11/CircuitPython/files/11407624/dylan-halbert-ff3a69da-d7b4-4372-af34-5b19af5cd6e2-certificate.pdf)
+
 
 
