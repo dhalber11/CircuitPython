@@ -413,6 +413,14 @@ This assignment was very cool to play with another new tool to be able to measur
 
 # CAD 
 
+## Onshape Assemblies
+### Description
+This is a self paced course assigned through onshape learning center. We were tasked to put together an assembly and play around with limits and different mates by assembling a toggle clamp. This was directed to prepare us for the onshape ceritification. 
+### Evidence 
+![image](https://user-images.githubusercontent.com/113122357/236499672-bf199de1-271c-4049-8c0b-d50e8385280a.png)
+### Reflection  
+This assignment was a very good intro to some of the mates that I have not used before. I never really had an issue with the original assembling of the parts but what I struggled with was the limiting of said mates. This assignment really helped me to understand the mates and their limits by giving me a step by step visualization. I still struggle with limiting some mates but I have found it is all a process of trial and error to find what works for each part. Onshape is not too friendly at least for me when it comes to limiting mates. 
+
 ## Swing Arm
 
 ### Description
