@@ -452,3 +452,9 @@ Link to Onshape document here: https://cvilleschools.onshape.com/documents/17596
 ### Reflection
 Overall I did have some difficulty with this assignment mainly during the transition between questions. As I was changing dimensions something would get thrown off and I would be stuck trying to find out what that was. My main issue was constraints and what in the Part that I based new sketches off of. Everything is based off of another thing so if one changed then the other might come with it. In the end I got some help from Mr.H and he was a great help in finding what was off with my designs. This assignment was very useful as it was good practice for the Onshape Certification. 
 
+## Onshape Certification
+
+### Prep
+For this assignment it was a culmination of the whole of my Onshape expertise come down to one test. I felt very prepared for this exam. I was able to use my knowledge of the past assignments that we used to prepare to help me. It all looked very familiar because of this. All of the parts of the exam were pretty much identical in the general design while the questions and dimensions were different. However because I had practiced the very similar assignments earlier in the year I was practiced with the tools that were needed to design the parts. I ended up passing all thanks to Mr.H and the practice assignments he assigned. There is a link to my here<[dylan-halbert-ff3a69da-d7b4-4372-af34-5b19af5cd6e2-certificate.pdf](https://github.com/dhalber11/CircuitPython/files/11407554/dylan-halbert-ff3a69da-d7b4-4372-af34-5b19af5cd6e2-certificate.pdf)> 
+
+
